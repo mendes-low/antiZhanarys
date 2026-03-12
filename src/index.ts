@@ -52,7 +52,7 @@ const bot = new Telegraf(BOT_TOKEN);
 
 function shouldUseSsl(url: string): boolean {
     return (
-        /render\.com|railway\.internal|railway\.app/i.test(url) ||
+        /render\.com|railway\.internal|railway\.app|neon\.tech/i.test(url) ||
         process.env.PGSSL === "true"
     );
 }
